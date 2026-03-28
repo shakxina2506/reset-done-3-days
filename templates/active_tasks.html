@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p> Active vazifalar</p>
+{% for task in tasks  %}
+<li>{{ task.task }} - {{ task.task_type }}</li>
+{% empty %}
+<p>hozircha task yoq</p>
+{% endfor %}
+
+</body>
+</html>
